@@ -1,0 +1,24 @@
+Question:
+Create a movie guessing game in JavaScript.
+The user should keep guessing the movie name until they guess it correctly or choose to quit.
+
+Solution:
+let movie=prompt("Enter your Favourite Movie");
+console.log("now start guessing");
+let guessmovie =prompt("Guess the movie"); 
+let leave="quit";
+if(movie!=guessmovie){
+ while(guessmovie!=movie && guessmovie!=leave)
+ {
+    guessmovie=prompt("Wrong Guessed , Enter again");
+ }
+ if(guessmovie==movie){
+ console.log("guessed right");}
+ else{
+    console.log("So Sad You Quit ");
+ }
+}
+else{
+    console.log("Guessed correct");
+
+}
