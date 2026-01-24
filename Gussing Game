@@ -6,19 +6,14 @@ Solution:
 let movie=prompt("Enter your Favourite Movie");
 console.log("now start guessing");
 let guessmovie =prompt("Guess the movie"); 
-let leave="quit";
-if(movie!=guessmovie){
- while(guessmovie!=movie && guessmovie!=leave)
+ while(guessmovie!=movie )
  {
+    if(guessmovie=="quit"){
+        console.log("You Quit");
+        break;
+    }
     guessmovie=prompt("Wrong Guessed , Enter again");
  }
  if(guessmovie==movie){
- console.log("guessed right");}
- else{
-    console.log("So Sad You Quit ");
- }
-}
-else{
-    console.log("Guessed correct");
-
-}
+ console.log("Guessed Right");}
+ 
