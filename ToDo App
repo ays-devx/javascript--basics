@@ -10,12 +10,12 @@ while(req!="quit"){
         }
          console.log("---------------");
     }
-    if(req=="add"){
+    else if(req=="add"){
         let add1=prompt("Enter the task to be added");
         todo.push(add1);
         console.log("Adding the element");
     }
-    if(req=="delete"){
+    else if(req=="delete"){
         let delete1=prompt("enter the no. of task which you want to delete");
         delete1=parseInt(delete1);
         let delete2=todo.splice(delete1-1,1);
@@ -23,6 +23,9 @@ while(req!="quit"){
         if(delete1>todo.length){
             console.log("Entered the wrong no. of item in list");
         }
+    }
+    else{
+        console.log("entered wrong request");
     }
     req=prompt("Enter your request");
 }
