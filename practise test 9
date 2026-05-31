@@ -1,0 +1,17 @@
+Qs1.Create a new input and button element on the page using JavaScript only.Set the text of button to “Click
+Create an h1 element on the page and set its text to “DOMPractice”underlined.Change its color to purple.
+let input=document.createElement('input');
+let butn=document.createElement('button');
+let body=document.querySelector('body');
+input.placeholder="hello";
+butn.innerText="click me ";
+body.append(input);
+body.append(butn);
+let h1=document.createElement('h1');
+h1.innerText="hello";
+h1.classList.add('styleh1');
+body.append(h1);
+
+
+ 
+ 
