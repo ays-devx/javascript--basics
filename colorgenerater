@@ -1,0 +1,20 @@
+function randomcolor(){
+    let red=Math.floor(Math.random()*255);
+    let green=Math.floor(Math.random()*255);
+    let blue=Math.floor(Math.random()*255);
+    let color=`rgb( ${red},${green},${blue})`;
+    return color;
+
+}
+function backcolor(){
+    let div=document.querySelector('div');
+   div.style.backgroundColor=randomcolor();
+
+}
+function heading(){
+    let h1=document.querySelector('h1');
+    h1.innerText=randomcolor();
+}
+let butn=document.querySelector('button');
+butn.addEventListener('click',backcolor);
+butn.addEventListener('click',heading);
